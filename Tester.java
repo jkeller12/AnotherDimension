@@ -5,7 +5,7 @@ public class Tester{
                   { -5, -2,  2, -9 } };
     int[]  B  =   {  1, 3, 5 };
 
-    System.out.println((ArrayOps.sum(A)));
+    System.out.println(Demo.arrToString(ArrayOps.sumCols(A)));
 
   }
 
