@@ -122,6 +122,19 @@ public class ArrayOps{
         return false;
       }
     }
-    return true; 
+    return true;
+  }
+
+  public static boolean isColMagic(int[][] matrix)
+  {
+    int[]Sum_Matrix = sumCols(matrix);
+    for (int i = 1; i < Sum_Matrix.length; i++)
+    {
+      if (Sum_Matrix[i-1] != Sum_Matrix[i])
+      {
+        return false;
+      }
+    }
+    return true;
   }
 }
