@@ -97,13 +97,13 @@ public class ArrayOps{
 
   public static int[] sumCols(int[][] matrix)
   {
-    int[]Sum_Arr = new int[matrix.length];
-    for (int i = 0 ; i < matrix.length; i++)
+    int[]Sum_Arr = new int[matrix[1].length];
+    for (int i = 0 ; i < matrix[1].length; i++)
     {
       int Sum_Value = 0 ;
-      for (int j = 0 ; j < matrix[i].length; j++)
+      for (int j = 0 ; j < matrix.length; j++)
       {
-        Sum_Value += matrix[i][j];
+        Sum_Value += matrix[j][i];
       }
       Sum_Arr[i] = Sum_Value;
     }
