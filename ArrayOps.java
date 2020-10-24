@@ -137,4 +137,14 @@ public class ArrayOps{
     }
     return true;
   }
+
+  public static boolean isLocationMagic(int[][] matrix, int row, int col)
+  {
+    // Returns true when the row and columns specific have the same sum
+    int[]Col_Matrix = sumCols(matrix);
+    int[]Row_Matrix = sumRows(matrix);
+
+    return Col_Matrix[col] == Row_Matrix[row];
+    
+  }
 }
