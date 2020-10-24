@@ -49,8 +49,27 @@ public class ArrayOps{
 
   public static int[] largestInRows (int[][] matrix)
   {
-    int[]C = {5,4} ;
-    return C;
+    int[]Largest_Array = new int[matrix.length];
+    int Large_Element = 0;
+
+    for (int i = 0 ; i < matrix.length; i++)
+    {
+      for (int j = 0; j < matrix[i].length; j++)
+      {
+        if (j == 0)
+        {
+          Large_Element = 0;
+        }
+        if (Large_Element < matrix[i][j])
+        {
+          Large_Element = matrix[i][j];
+        }
+
+      }
+      Largest_Array[i] = Large_Element;
+
+    }
+    return Largest_Array;
 
   }
 }
