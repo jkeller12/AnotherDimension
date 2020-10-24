@@ -84,11 +84,29 @@ public class ArrayOps{
       }
       Sum_Arr[i] = Sum_Value;
     }
-    int Return_Value = 0;
+    int Value = 0;
     for (int i = 0; i < Sum_Arr.length; i++)
     {
-      Return_Value += Sum_Arr[i];
+      Value += Sum_Arr[i];
     }
-    return Return_Value;
+    return Value;
+  }
+
+
+  // Part 5
+
+  public static int[] sumCols(int[][] matrix)
+  {
+    int[]Sum_Arr = new int[matrix.length];
+    for (int i = 0 ; i < matrix.length; i++)
+    {
+      int Sum_Value = 0 ;
+      for (int j = 0 ; j < matrix[i].length; j++)
+      {
+        Sum_Value += matrix[i][j];
+      }
+      Sum_Arr[i] = Sum_Value;
+    }
+    return Sum_Arr;
   }
 }
