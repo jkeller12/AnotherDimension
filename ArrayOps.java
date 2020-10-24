@@ -72,4 +72,23 @@ public class ArrayOps{
     return Largest_Array;
 
   }
+
+  public static int sum(int[][] arr)
+  { int[]Sum_Arr = new int[arr.length];
+    for (int i = 0 ; i < arr.length; i++)
+    {
+      int Sum_Value = 0 ;
+      for (int j = 0 ; j < arr[i].length; j++)
+      {
+        Sum_Value += arr[i][j];
+      }
+      Sum_Arr[i] = Sum_Value;
+    }
+    int Return_Value = 0;
+    for (int i = 0; i < Sum_Arr.length; i++)
+    {
+      Return_Value += Sum_Arr[i];
+    }
+    return Return_Value;
+  }
 }
