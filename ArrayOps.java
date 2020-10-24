@@ -13,9 +13,16 @@ public class ArrayOps{
   }
 
   public static int largest(int[] arr)
-  {
-    int A = 4;
-    return A;
+  { int Max = 0;
+    for (int i = 0 ; i < arr.length; i ++)
+    {
+      if (arr[i] > Max)
+      {
+        Max = arr[i];
+      }
+    }
+
+    return Max;
   }
 
   public static int[] sumRows(int[][] matrix)
